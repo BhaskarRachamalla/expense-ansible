@@ -1,0 +1,9 @@
+- name: Install backend service
+  hosts: backend  
+  vars:
+  tasks:
+  - name: disable nodejs
+    ansible.builtin.command: dnf module disable nodejs -y
+
+  - name: enable nodejs latest version
+    ansible.builtin.command: dnf module enable nodejs:20 -y
