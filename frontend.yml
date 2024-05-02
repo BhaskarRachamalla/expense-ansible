@@ -6,7 +6,7 @@
   - name: Install nginx
     ansible.builtin.command: dnf install nginx -y 
   - name: Enable and start nginx
-    ansible.builtin.dnf:
+    ansible.builtin.service:
       name: nginx
       state: started
       enabled: yes
