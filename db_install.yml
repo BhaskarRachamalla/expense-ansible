@@ -1,5 +1,6 @@
 - name: install db
   hosts: db
+  become: yes
   vars:
     login_host: db.devopsbhaskar.online
   tasks:
