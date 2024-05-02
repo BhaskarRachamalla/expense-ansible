@@ -24,4 +24,4 @@
 
   - name: print output
     ansible.builtin.debug:
-      msg: "{{ msql_connection_output }}"
+      msg: "output is {{ msql_connection_output }}"
