@@ -26,6 +26,13 @@
       dest: /usr/share/nginx/html
       remote_src: yes
 
+  - name: copy backend service
+    ansible.builtin.copy:
+      src: frontend.service
+      dest: /etc/nginx/default.d/expense.conf
+
+
+
       
 
 
