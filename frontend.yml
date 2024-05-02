@@ -9,8 +9,9 @@
   - name: Enable and start nginx
     ansible.builtin.service:
       name: nginx
-      state: started
+      state: restarted
       enabled: yes
+
   - name: Remove file
     ansible.builtin.file:
       path: /usr/share/nginx/html
