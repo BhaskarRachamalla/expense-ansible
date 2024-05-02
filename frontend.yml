@@ -5,6 +5,7 @@
   tasks:
   - name: Install nginx
     ansible.builtin.command: dnf install nginx -y 
+
   - name: Enable and start nginx
     ansible.builtin.service:
       name: nginx
@@ -31,10 +32,7 @@
       src: expense.conf
       dest: /etc/nginx/default.d/expense.conf
 
-  - name: restart nginx
-    ansible.builtin.service:
-      name: nginx
-      state: restarted
+ 
 
 
 
