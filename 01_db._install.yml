@@ -11,9 +11,9 @@
 
   - name: Enable and Start MySQL Service
     ansible.builtin.service:
-     name: mysqld
-     state: started
-     enabled: yes
+      name: mysqld
+      state: started
+      enabled: yes
 
   - name: check db connection
     community.mysql.mysql_db:
@@ -26,4 +26,4 @@
 
   - name: print output
     ansible.builtin.debug:
-     msg: "output is {{ msql_connection_output }}"
+      msg: "output is {{ msql_connection_output }}"
