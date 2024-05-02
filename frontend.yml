@@ -14,6 +14,6 @@
     ansible.builtin.file:
       path: /usr/share/nginx/html/*
       state: absent
-      remote_src: yes
+      src: yes
 
 
